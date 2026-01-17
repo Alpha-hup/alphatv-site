@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaTV | Plataformas de Entretenimento e Soluções de Streaming Premium</title>
+    <meta name="description" content="Acesse as melhores soluções de entretenimento digital. Plataformas estáveis, suporte VIP e ativação imediata para sua diversão completa.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-dark': '#05080D',
+                        'neon-blue': '#00E1FF',
+                        'neon-orange': '#FF6A00',
+                        'orange-light': '#FFA24D',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(0, 225, 255, 0.1) 0%, rgba(5, 8, 13, 1) 100%);
+        }
+        
+        .btn-glow-orange {
+            box-shadow: 0 10px 25px rgba(255, 106, 0, 0.35);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-glow-orange:hover {
+            box-shadow: 0 15px 35px rgba(255, 106, 0, 0.55);
+            transform: scale(1.03);
+        }
+
+        .plan-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .plan-card:hover {
+            border-color: rgba(0, 225, 255, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        details summary::-webkit-details-marker { display: none; }
+        details summary { list-style: none; }
+
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(5, 8, 13, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        #legal-content {
+            transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-bg-dark text-white font-sans antialiased selection:bg-neon-blue selection:text-bg-dark">
+
+    <script>
+        const WA_LINK = "https://wa.me/5547996168523?text=Olá! Quero conhecer os planos de acesso às plataformas digitais da AlphaTV e iniciar meu teste.";
+        function openWA() { window.open(WA_LINK, '_blank', 'noopener'); }
+        
+        function toggleLegal(type) {
+            const section = document.getElementById('legal-content');
+            const privacy = document.getElementById('privacy-text');
+            const terms = document.getElementById('terms-text');
+            
+            if (!type) {
+                section.classList.add('hidden');
+                return;
+            }
+
+            if (type === 'privacy') {
+                if (!privacy.classList.contains('hidden') && !section.classList.contains('hidden')) {
+                    section.classList.add('hidden');
+                } else {
+                    section.classList.remove('hidden');
+                    privacy.classList.remove('hidden');
+                    terms.classList.add('hidden');
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else if (type === 'terms') {
+                if (!terms.classList.contains('hidden') && !section.classList.contains('hidden')) {
+                    section.classList.add('hidden');
+                } else {
+                    section.classList.remove('hidden');
+                    terms.classList.remove('hidden');
+                    privacy.classList.add('hidden');
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
+
+    <!-- 1. HEADER FIXO -->
+    <header class="sticky-header py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-black italic tracking-tighter uppercase cursor-default">
+                ALPHA<span class="text-neon-blue">TV</span>
+            </div>
+            <button onclick="openWA()" class="bg-gradient-to-r from-neon-orange to-orange-light text-white px-5 py-2.5 rounded-full font-black text-[10px] md:text-xs uppercase transition-all btn-glow-orange flex items-center gap-2">
+                <i data-lucide="play-circle" class="w-4 h-4"></i>
+                <span>ASSINE AGORA</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative pt-16 md:pt-24 pb-20 px-6 overflow-hidden flex items-center min-h-[75vh]">
+        <div class="absolute inset-0 -z-10 hero-gradient"></div>
+        <div class="absolute inset-0 -z-20 opacity-20 pointer-events-none" style="background-image: radial-gradient(#00E1FF 0.5px, transparent 0.5px); background-size: 30px 30px;"></div>
+
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-[1.1] tracking-tight max-w-5xl mx-auto uppercase">
+                Sua Experiência Definitiva em <span class="text-neon-blue">Entretenimento Digital.</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium">
+                Acesse as melhores plataformas de streaming com máxima estabilidade, suporte premium e ativação imediata para toda a sua família aproveitar.
+            </p>
+            
+            <div class="flex flex-col items-center gap-5">
+                <button onclick="openWA()" class="bg-gradient-to-r from-neon-orange to-orange-light px-10 md:px-16 py-5 md:py-6 rounded-full flex items-center gap-4 text-xl md:text-2xl font-black uppercase tracking-wider transition-all btn-glow-orange group">
+                    <i data-lucide="zap" class="w-6 h-6 md:w-8 md:h-8 fill-current"></i> 
+                    ESCOLHER MEU PLANO
+                </button>
+                <p class="text-[11px] md:text-sm text-gray-500 font-bold uppercase tracking-[0.2em] flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
+                    Ativação Instantânea • Teste Grátis • Suporte Especializado
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. BENEFÍCIOS PRINCIPAIS -->
+    <section id="beneficios" class="py-20 bg-white/[0.02] border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="p-8 rounded-3xl plan-card text-center">
+                    <div class="w-16 h-16 bg-neon-blue/10 rounded-2xl flex items-center justify-center mb-6 mx-auto border border-neon-blue/20">
+                        <i data-lucide="tv" class="text-neon-blue w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-3 uppercase italic tracking-tighter">Qualidade Ultra HD</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Nossas plataformas são otimizadas para entregar a melhor resolução, garantindo uma experiência visual imersiva e sem falhas.</p>
+                </div>
+                <div class="p-8 rounded-3xl plan-card text-center">
+                    <div class="w-16 h-16 bg-neon-orange/10 rounded-2xl flex items-center justify-center mb-6 mx-auto border border-neon-orange/20">
+                        <i data-lucide="layout" class="text-neon-orange w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-3 uppercase italic tracking-tighter">Catálogo Completo</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Acesse as ferramentas e interfaces mais modernas do mercado, organizadas para facilitar sua navegação e diversão diária.</p>
+                </div>
+                <div class="p-8 rounded-3xl plan-card text-center">
+                    <div class="w-16 h-16 bg-neon-blue/10 rounded-2xl flex items-center justify-center mb-6 mx-auto border border-neon-blue/20">
+                        <i data-lucide="award" class="text-neon-blue w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-3 uppercase italic tracking-tighter">Atendimento VIP</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Consultores prontos no WhatsApp para realizar sua ativação e oferecer suporte técnico sempre que você precisar de auxílio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PLANOS -->
+    <section id="planos" class="py-24 bg-[#080B12] border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black uppercase italic tracking-tighter">ESCOLHA SEU PLANO DE ACESSO</h2>
+                <p class="text-gray-500 mt-4 font-bold text-sm uppercase tracking-widest">A melhor relação custo-benefício em entretenimento digital</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+                <!-- Plano Mensal -->
+                <div class="p-8 rounded-3xl bg-bg-dark border border-white/10 flex flex-col plan-card">
+                    <h3 class="text-xl font-black mb-2 text-neon-blue italic uppercase">Plano Mensal</h3>
+                    <p class="text-gray-500 text-[10px] font-bold mb-8 uppercase italic">Perfeito para testar nossa qualidade</p>
+                    <ul class="space-y-4 mb-10 text-sm text-gray-400">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-neon-blue"></i> Acesso Total à Plataforma</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-neon-blue"></i> Suporte Especializado</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-neon-blue"></i> Qualidade SD/HD/4K</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-neon-blue"></i> Sem Contratos de Fidelidade</li>
+                    </ul>
+                    <button onclick="openWA()" class="mt-auto block w-full py-4 border-2 border-neon-blue text-neon-blue rounded-full font-black hover:bg-neon-blue hover:text-bg-dark transition-all uppercase text-[10px] tracking-widest">CONTRATAR VIA WHATSAPP</button>
+                </div>
+
+                <!-- Plano Anual -->
+                <div class="p-10 rounded-[2.5rem] border-2 border-neon-orange bg-bg-dark flex flex-col relative shadow-2xl shadow-neon-orange/20 scale-105 z-10">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-neon-orange text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest whitespace-nowrap shadow-lg">MELHOR CUSTO-BENEFÍCIO</div>
+                    <h3 class="text-2xl font-black mb-2 text-orange-light italic uppercase">Plano Anual</h3>
+                    <p class="text-gray-100 text-[10px] font-bold mb-8 uppercase italic">A escolha definitiva para sua família</p>
+                    <ul class="space-y-4 mb-10 text-sm text-gray-100 font-bold">
+                        <li class="flex items-center gap-3"><i data-lucide="star" class="w-4 h-4 text-neon-orange fill-current"></i> Suporte Prioritário VIP 24h</li>
+                        <li class="flex items-center gap-3"><i data-lucide="star" class="w-4 h-4 text-neon-orange fill-current"></i> Máxima Economia Real</li>
+                        <li class="flex items-center gap-3"><i data-lucide="star" class="w-4 h-4 text-neon-orange fill-current"></i> Garantia de Estabilidade</li>
+                        <li class="flex items-center gap-3"><i data-lucide="star" class="w-4 h-4 text-neon-orange fill-current"></i> Acesso VIP por 365 dias</li>
+                    </ul>
+                    <button onclick="openWA()" class="mt-auto block w-full py-5 bg-gradient-to-r from-neon-orange to-orange-light text-white rounded-full font-black text-base uppercase tracking-wider transition-all btn-glow-orange">ASSINAR AGORA</button>
+                </div>
+
+                <!-- Plano Trimestral -->
+                <div class="p-8 rounded-3xl bg-bg-dark border border-white/10 flex flex-col plan-card">
+                    <h3 class="text-xl font-black mb-2 text-neon-blue italic uppercase">Plano Trimestral</h3>
+                    <p class="text-gray-500 text-[10px] font-bold mb-8 uppercase italic">Ideal para garantir estabilidade</p>
+                    <ul class="space-y-4 mb-10 text-sm text-gray-400">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-neon-blue"></i> 90 dias de Acesso Premium</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-neon-blue"></i> Assistência em Configuração</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-neon-blue"></i> Qualidade Premium Estável</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-neon-blue"></i> Ativação em Múltiplos Dispositivos</li>
+                    </ul>
+                    <button onclick="openWA()" class="mt-auto block w-full py-4 border-2 border-neon-blue text-neon-blue rounded-full font-black hover:bg-neon-blue hover:text-bg-dark transition-all uppercase text-[10px] tracking-widest">CONTRATAR VIA WHATSAPP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PROVA SOCIAL -->
+    <section class="py-24 bg-bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center text-3xl md:text-4xl font-black mb-16 uppercase italic tracking-tighter">O QUE NOSSOS <span class="text-neon-blue">CLIENTES DIZEM</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="p-8 rounded-3xl bg-white/5 border border-white/5">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-neon-blue/20 flex items-center justify-center font-black text-sm text-neon-blue">RS</div>
+                        <div>
+                            <div class="font-bold text-sm">Ricardo Silva</div>
+                            <div class="text-[9px] text-gray-500 uppercase font-black tracking-widest">São Paulo - SP</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic text-sm leading-relaxed">"A ativação foi em menos de 5 minutos. A qualidade da plataforma é incrível e não trava nunca. Melhor serviço que já contratei."</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white/5 border border-white/5">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-neon-orange/20 flex items-center justify-center font-black text-sm text-neon-orange">MC</div>
+                        <div>
+                            <div class="font-bold text-sm">Mariana Costa</div>
+                            <div class="text-[9px] text-gray-500 uppercase font-black tracking-widest">Curitiba - PR</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic text-sm leading-relaxed">"O suporte me ajudou a configurar tudo na Smart TV rapidinho. Agora minha família tem entretenimento garantido sem stress."</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white/5 border border-white/5">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-neon-blue/20 flex items-center justify-center font-black text-sm text-neon-blue">JP</div>
+                        <div>
+                            <div class="font-bold text-sm">João Pedro</div>
+                            <div class="text-[9px] text-gray-500 uppercase font-black tracking-widest">Rio de Janeiro - RJ</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic text-sm leading-relaxed">"Uso o plano anual e vale cada centavo. A estabilidade é o diferencial, não perco nenhum momento importante por lentidão."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. QUEBRA DE OBJEÇÕES (FAQ) -->
+    <section id="faq" class="py-24 bg-bg-dark">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-center text-3xl font-black mb-16 uppercase italic tracking-tighter">PERGUNTAS FREQUENTES</h2>
+            <div class="space-y-4">
+                <details class="group bg-[#080B12] border border-white/5 rounded-2xl overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-bold hover:text-neon-blue transition-colors">
+                        <span>Como faço para começar a assistir?</span>
+                        <i data-lucide="plus" class="w-5 h-5 transition-transform group-open:rotate-45"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-white/5 pt-4">
+                        É simples! Após escolher seu plano e entrar em contato pelo WhatsApp, nossa equipe realiza sua ativação imediata. Você receberá as orientações para acessar a plataforma direto no seu dispositivo favorito.
+                    </div>
+                </details>
+                <details class="group bg-[#080B12] border border-white/5 rounded-2xl overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-bold hover:text-neon-blue transition-colors">
+                        <span>Em quais dispositivos posso usar?</span>
+                        <i data-lucide="plus" class="w-5 h-5 transition-transform group-open:rotate-45"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-white/5 pt-4">
+                        Nossas soluções de streaming são compatíveis com Smart TVs, TV Box, Fire Stick, Smartphones (Android/iOS), Tablets e Computadores. Oferecemos suporte completo para configuração em qualquer um deles.
+                    </div>
+                </details>
+                <details class="group bg-[#080B12] border border-white/5 rounded-2xl overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-bold hover:text-neon-blue transition-colors">
+                        <span>Preciso de uma internet muito potente?</span>
+                        <i data-lucide="plus" class="w-5 h-5 transition-transform group-open:rotate-45"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-white/5 pt-4">
+                        Nossa plataforma é otimizada para funcionar bem mesmo em conexões modestas. Recomendamos uma conexão estável de pelo menos 10mbps para uma experiência perfeita em HD e 4K.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CTA FINAL -->
+    <section class="py-24 bg-bg-dark text-center px-6 border-t border-white/10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-5xl font-black mb-6 uppercase italic tracking-tighter leading-tight">TENHA O MELHOR DO STREAMING AGORA</h2>
+            <p class="text-gray-400 mb-10 max-w-xl mx-auto font-medium text-lg">Não perca mais tempo com travamentos. Garanta seu acesso premium hoje com ativação instantânea.</p>
+            <div class="flex flex-col items-center gap-5">
+                <button onclick="openWA()" class="bg-gradient-to-r from-neon-orange to-orange-light px-12 md:px-20 py-6 md:py-8 rounded-full inline-flex items-center gap-4 text-xl md:text-3xl font-black uppercase tracking-wider transition-all btn-glow-orange">
+                    <i data-lucide="message-circle" class="w-8 h-8 md:w-10 md:h-10"></i> FALAR COM UM CONSULTOR
+                </button>
+                <div class="flex items-center gap-3 text-gray-500 font-bold uppercase tracking-[0.2em] italic text-xs md:text-sm">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i> ATIVAÇÃO IMEDIATA • TESTE DISPONÍVEL
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO LEGAL INTERATIVA (SINGLE PAGE) -->
+    <section id="legal-content" class="hidden bg-[#080B12] py-12 px-6 border-t border-white/10">
+        <div class="container mx-auto max-w-4xl text-left">
+            <div id="privacy-text" class="hidden">
+                <h2 class="text-2xl font-black mb-6 uppercase italic tracking-tighter text-neon-blue">POLÍTICA DE PRIVACIDADE – ALPHATV</h2>
+                <div class="space-y-4 text-gray-400 leading-relaxed text-sm md:text-base">
+                    <p>A AlphaTV preza pela transparência. Coletamos apenas informações necessárias para o atendimento comercial e suporte técnico solicitado voluntariamente pelo usuário.</p>
+                    <p><strong>Nossa Atividade:</strong> Atuamos na prestação de serviços de ativação e suporte para plataformas digitais de entretenimento. Não hospedamos arquivos próprios nem comercializamos conteúdos sem as devidas licenças das plataformas parceiras.</p>
+                    <p>Não compartilhamos dados com terceiros e não realizamos práticas de spam. Ao utilizar este canal, você concorda com o tratamento de dados para fins exclusivos de assistência comercial e técnica.</p>
+                </div>
+            </div>
+            <div id="terms-text" class="hidden">
+                <h2 class="text-2xl font-black mb-6 uppercase italic tracking-tighter text-neon-blue">TERMOS DE USO – ALPHATV</h2>
+                <div class="space-y-4 text-gray-400 leading-relaxed text-sm md:text-base">
+                    <p>A AlphaTV presta serviços de ativação, consultoria técnica e suporte para soluções de entretenimento digital e streaming.</p>
+                    <p>Ao contratar nossos serviços, o usuário reconhece que a qualidade final depende também de sua conexão de rede. Nosso suporte foca na melhor configuração possível para seus dispositivos.</p>
+                    <p>Não nos responsabilizamos por instabilidades decorrentes de falhas em softwares de terceiros ou atualizações das plataformas. O usuário compromete-se a utilizar o acesso de forma ética e lícita.</p>
+                </div>
+            </div>
+            <button onclick="toggleLegal('')" class="mt-8 text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-white flex items-center gap-2 transition-colors">
+                 <i data-lucide="x" class="w-4 h-4"></i> FECHAR
+            </button>
+        </div>
+    </section>
+
+    <!-- AVISO DE CONFORMIDADE (FOOTER DISCLAIMER) -->
+    <div class="bg-black/50 py-4 px-6 border-t border-white/5">
+        <div class="container mx-auto text-[9px] md:text-[10px] text-gray-600 text-center uppercase tracking-wider leading-relaxed font-medium">
+            Conformidade Comercial: AlphaTV é um canal de vendas e suporte especializado em plataformas de entretenimento digital. Oferecemos planos de assinatura, ativação técnica e consultoria em conectividade. Atuamos como intermediários de serviços de streaming, garantindo a melhor performance para o usuário final.
+        </div>
+    </div>
+
+    <!-- 8. FOOTER -->
+    <footer class="bg-black py-12 px-6 border-t border-white/5 text-center">
+        <div class="container mx-auto">
+            <div class="text-2xl font-black italic tracking-tighter mb-8 uppercase">
+                ALPHA<span class="text-neon-blue">TV</span>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-10 mb-8 text-[10px] text-gray-500 font-bold uppercase tracking-widest">
+                <a href="javascript:void(0)" onclick="toggleLegal('terms')" class="hover:text-neon-blue transition-colors">Termos de Uso</a>
+                <a href="javascript:void(0)" onclick="toggleLegal('privacy')" class="hover:text-neon-blue transition-colors">Política de Privacidade</a>
+                <a href="https://wa.me/5547996168523" target="_blank" rel="noopener" class="hover:text-neon-blue transition-colors">Contato Comercial</a>
+            </div>
+            <p class="text-gray-700 text-[10px] uppercase tracking-widest font-black opacity-40 leading-relaxed">
+                © <span id="year"></span> ALPHATV PREMIUM. TODOS OS DIREITOS RESERVADOS. <br>
+                SOLUÇÕES DE ENTRETENIMENTO E SUPORTE DIGITAL.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
