@@ -379,13 +379,19 @@
             <div class="flex flex-wrap justify-center gap-6 md:gap-10 mb-8 text-[10px] text-gray-500 font-bold uppercase tracking-widest">
                 <a href="javascript:void(0)" onclick="toggleLegal('terms')" class="hover:text-neon-blue transition-colors">Termos de Uso</a>
                 <a href="javascript:void(0)" onclick="toggleLegal('privacy')" class="hover:text-neon-blue transition-colors">Política de Privacidade</a>
-                <a href="https://wa.me/5547996168523" target="_blank" rel="noopener" class="hover:text-neon-blue transition-colors">Contato Comercial</a>
+                <a href="https://wa.me/5547996168523"
+   target="_blank"
+   rel="noopener"
+   onclick="trackWhatsApp()">
             </div>
             <p class="text-gray-700 text-[10px] uppercase tracking-widest font-black opacity-40 leading-relaxed">
                 © <span id="year"></span> ALPHATV PREMIUM. TODOS OS DIREITOS RESERVADOS. <br>
                 SOLUÇÕES DE ENTRETENIMENTO E SUPORTE DIGITAL.
             </p>
         </div>
+
+    </a>
+        
     </footer>
 
     <script>
@@ -393,5 +399,17 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 <script type="module" src="/index.tsx"></script>
+    <script>
+        
+  <script>
+  function trackWhatsApp() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-1785967532/falar_com_atendente'
+      });
+    }
+  }
+</script>
+    
 </body>
 </html>
